@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    //
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/lumen/">
+    <link rel="stylesheet" href="style.css">
+    <title>Total Trivial Trivia!</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1> Totally Trivial Trivia!</h1>
+
+        <button>Start Game</button>
+
+        <div>Time Remaining: </div>
+
+        <form name="quiz" onsubmit="return onSubmit()">
+            <div class="question">
+
+                <h1> What year did Temple of Dome hit theatre?</h1>
+
+                <input type="radio" name="q1" value="a"> 1981
+                <input type="radio" name="q1" value="b"> 1984
+                <input type="radio" name="q1" value="c"> 1994
+                <input type="radio" name="q1" value="d"> 1991
+
+                <br>
+            </div>
+            <div class="question">
+                <h1> Who played Indiana Jones?</h1>
+
+                <input type="radio" name="q2" value="a"> Tom Cruise
+                <input type="radio" name="q2" value="b"> Michael Douglas
+                <input type="radio" name="q2" value="c"> Harrison Ford
+                <input type="radio" name="q2" value="d"> Bruce Willis
+
+                <br>
+            </div>
+    
+            <div class="question">
+                <h1> What country does the ark reside?</h1>
+    
+                <input type="radio" name="q3" value="a"> Jordan
+                <input type="radio" name="q3" value="b"> Israel
+                <input type="radio" name="q3" value="c"> Egypt
+                <input type="radio" name="q3" value="d"> Iran
+    
+                <br>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    
+        <div id="results">
+            <h2>All Done!</h2>
+            <h2>Correct Answer: </h2>
+            <h2> Incorrect Answer:</h2>
+            <h3>Unanswered: </h3>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="assets\javascript\app.js"></script>
+</body>
+
+</html>

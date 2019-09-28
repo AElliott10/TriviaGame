@@ -1,0 +1,34 @@
+
+First Attempt
+<div class="container">
+
+        <h1> Totally Trivial Trivia!</h1>
+
+        <button>Start Game</button>
+
+        <div>Time Remaining: </div>
+
+        <form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+
+        <li><div class="question">What year did Temple of Dome hit theatre?</div></li>
+
+                <input id = "answer1" type="radio" name="questionOne" value="correct"> 1981
+                <input id = "answer2" type="radio" name="questionOne" value="wrong"> 1984
+                <input id = "answer3" type="radio" name="questionOne" value="wrong"> 1994
+                <input id = "answer4" type="radio" name="questionOne" value="wrong"> 1991
+               
+            <br>
+
+        <li><div class="question">Who played Indiana Jones?</div></li>
+
+                <input id = "answer1" type="radio" name="questionOne" value="wrong"> Tom Cruise
+                <input id = "answer2" type="radio" name="questionOne" value="wrong"> Michael Douglas
+                <input id = "answer3" type="radio" name="questionOne" value="correct"> Harrison Ford
+                <input id = "answer4" type="radio" name="questionOne" value="wrong"> Bruce Willis 
+        
+        <br>
+
+        <button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+
+         </form>
+    </div>
