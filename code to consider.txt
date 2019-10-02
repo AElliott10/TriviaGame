@@ -1,3 +1,106 @@
+/*OLD CODE
+
+${randomImage(celebrateImages)}
+
+// these are the same code written differencly: $(`#game`).html(`<h4>${question}</h4>`);
+    versus $('#game').html('<h4>' + question + '</h4>'), ('<h4>' + choices + '</h4>');
+
+//console.log("test"); test that the js is linked properly
+//console.log($);test to see that jquery is linked properly
+
+//timer functionality
+var sec = 15;
+var time = setInterval(myTimer, 1000);
+
+/*function myTimer() {
+    document.getElementById('timer').innerHTML = "Timer:" + sec + "sec left";
+    sec--;
+    if (sec == -1) {
+    clearInterval(timer);
+    alert("Time is up!");
+    }
+}
+
+
+//Submit functionality
+function onSubmit() {
+    var score = 0;
+    var numOfQuestions = 3;
+    var ansArr = ["a", "c", "c"];
+
+    var q1 = document.forms["quiz"]["q1"].value;
+    var q2 = document.forms["quiz"]["q2"].value;
+    var q3 = document.forms["quiz"]["q3"].value;
+
+    for (var i = 1; i <= numOfQuestions; i++) {
+        if (eval("q" + i) == "") {
+            alert("You missed question number" + i);
+        }
+    }
+
+    for (var i = 1; i <= numOfQuestions; i++) {
+        if (eval("q" + i) == ansArr[i - 1]) {
+            score++;
+            console.log(score);
+        }
+    }
+}
+
+var results = document.getElementById("results")
+    results.innerHTML = "<h2> "You Scored" + score + "out of" + numOfQuestions.</h2>
+}
+*/
+
+
+
+first Attempt - HTML
+        <form name="quiz" onsubmit="return onSubmit()">
+            <div class="question">
+
+                <h1> What year did Temple of Dome hit theatres?</h1>
+
+                <input type="radio" name="q1" value="a"> 1981
+                <input type="radio" name="q1" value="b"> 1984
+                <input type="radio" name="q1" value="c"> 1994
+                <input type="radio" name="q1" value="d"> 1991
+            </div>
+
+            <br>
+
+            <div class="question">
+                <h1> Who played Indiana Jones?</h1>
+
+                <input type="radio" name="q2" value="a"> Tom Cruise
+                <input type="radio" name="q2" value="b"> Michael Douglas
+                <input type="radio" name="q2" value="c"> Harrison Ford
+                <input type="radio" name="q2" value="d"> Bruce Willis
+            </div>
+
+            <br>
+
+            <div class="question">
+                <h1> What country are moses tablets buried?</h1>
+    
+                <input type="radio" name="q3" value="a"> Jordan
+                <input type="radio" name="q3" value="b"> Israel
+                <input type="radio" name="q3" value="c"> Egypt
+                <input type="radio" name="q3" value="d"> Iran
+            </div>
+
+            <br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+            <br>
+        <div>
+            <h2>All Done!</h2>
+            <div id ="results"></div>
+            <h3> Incorrect Answer:<div id = IncorrectAnswer></div></h3>
+            <h3>Unanswered: <div id = unAnswered></div></h3>
+        </div>
+    </div>
+
 
 First Attempt
 <div class="container">

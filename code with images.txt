@@ -1,3 +1,55 @@
+HTML CODE
+<!--comments-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <title>Total Trivial Trivia!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <!--way to test that bootstrap is working
+            <button class="btn btn-primary">Test</button>
+            -->
+
+        <h1> Totally Trivial Trivia!</h1>
+
+        <button class="btn btn-primary" id="start">Start Game</button>
+    </div>
+
+        <h2 id = "time"></h2> <!--these are elements - timer-->
+        <div id = "game"></div> <!--these are elements for everything that goes in the game-->
+
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="assets\javascript\jsquestion.js"></script>
+    <script src="assets\javascript\app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+JS APP CODE
+
 //console.log("JS is working");//show that js is working
 console.log($);//show that jquery is working
 console.log(quizQuestions);
@@ -169,3 +221,40 @@ $('#start').click(function() {
     
     loadQuestion();
 });
+
+
+
+
+JS QUESTIONS.JS
+
+var quizQuestions = [
+    {
+        question: "What year did Temple of Dome hit theatres?",
+        choices: ["1981", "1984", "1994", "1991"],
+        correctAnswer: "1981"
+    },
+
+    {
+        question: "Who played Indiana Jones?",
+        choices: ["Tom Cruise", "Michael Douglas", "Harrison Ford", "Bruce Willis"],
+        correctAnswer: "Harrison Ford"
+    },
+
+    {
+        question: "What country are Moses tablets buried?",
+        choices: ["Jordan", "Israel", "Egypt", "Iran"],
+        correctAnswer: "Egypt"
+    },
+];
+
+var celebrateImages = [
+   'assets\images\got it right.gif',
+   'assets\images\got it right2.gif',
+   'assets\images\got it right3.gif',
+];
+
+var oopsImages = [
+    '.assets\images\ooops.gif',
+    '.assets\images\ooops2.gif',
+    '.assets\images\ooops3.gif',
+ ];
